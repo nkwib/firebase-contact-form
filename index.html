@@ -11,45 +11,48 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="brand"><span>Acme</span> Web Design</h1>
-    <div class="wrapper animated bounceInLeft">
+    <h1 class="brand"><span>Funny Co. </span> Web Design</h1>
+    <div class="wrapper animated fadeInUp">
       <div class="company-info">
-        <h3>Acme Web Design</h3>
+        <h3>This is a serious Company</h3>
         <ul>
-          <li><i class="fa fa-road"></i> 44 Something st</li>
-          <li><i class="fa fa-phone"></i> (555) 555-5555</li>
-          <li><i class="fa fa-envelope"></i> test@acme.test</li>
+          <li><i class="fa fa-road"></i> 1024 Random Rd</li>
+          <li><i class="fa fa-phone"></i> +33 333 3333333</li>
+          <li><i class="fa fa-envelope"></i> serious@email.com</li>
         </ul>
       </div>
       <div class="contact">
         <h3>Email Us</h3>
-        <form>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
           <p>
             <label>Name</label>
-            <input type="text" name="name">
+            <input type="text" name="name" id="name" required>
           </p>
           <p>
             <label>Company</label>
-            <input type="text" name="company">
+            <input type="text" name="company" id="company">
           </p>
           <p>
             <label>Email Address</label>
-            <input type="email" name="email">
+            <input type="email" name="email" id="email" required>
           </p>
           <p>
             <label>Phone Number</label>
-            <input type="text" name="phone">
+            <input type="text" name="phone" id="phone">
           </p>
           <p class="full">
             <label>Message</label>
-            <textarea name="message" rows="5"></textarea>
+            <textarea name="message" id="message" rows="5"></textarea>
           </p>
           <p class="full">
-            <button>Submit</button>
+            <button type="submit">Submit</button>
           </p>
         </form>
       </div>
     </div>
   </div>
+  <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
